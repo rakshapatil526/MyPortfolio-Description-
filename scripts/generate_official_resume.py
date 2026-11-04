@@ -244,7 +244,7 @@ def generate_resume(output_path):
     story.extend(section_divider("Education"))
     edu_header = Table([
         [Paragraph("<b>B.E. – Computer Science and Engineering</b> | Jnana Vikas Institute of Technology, Bidadi, Bengaluru", ParagraphStyle('EduH', parent=body_style, fontName='Helvetica-Bold', fontSize=8.2)),
-         Paragraph("<b>CGPA: 8.4/10</b>", ParagraphStyle('EduCGPA', parent=body_style, fontName='Helvetica-Bold', fontSize=8.2, alignment=2, textColor=c_blue))]
+         Paragraph("<b>CGPA: 8.7/10</b>", ParagraphStyle('EduCGPA', parent=body_style, fontName='Helvetica-Bold', fontSize=8.2, alignment=2, textColor=c_blue))]
     ], colWidths=[440, 108])
     edu_header.setStyle(TableStyle([
         ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),

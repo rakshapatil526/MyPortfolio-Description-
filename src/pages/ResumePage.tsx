@@ -4,7 +4,6 @@ import {
   Download, 
   ExternalLink, 
   ArrowLeft, 
-  FileText, 
   CheckCircle2, 
   MapPin, 
   Phone, 
@@ -50,7 +49,7 @@ export const ResumePage: React.FC = () => {
             </h1>
 
             <p className="text-sm text-slate-300 font-mono">
-              {PROFILE_DATA.title} | Jnana Vikas Institute of Technology (8.4 CGPA)
+              {PROFILE_DATA.title} | Jnana Vikas Institute of Technology (8.7 CGPA)
             </p>
 
             <div className="flex flex-wrap items-center gap-3 text-xs text-slate-400 pt-1">
@@ -93,29 +92,46 @@ export const ResumePage: React.FC = () => {
           </div>
         </div>
 
-        {/* Embedded PDF Viewer Frame */}
-        <div className="rounded-3xl bg-[#0c1222] border border-slate-800 overflow-hidden shadow-2xl mb-12">
-          <div className="px-6 py-3 bg-slate-900 border-b border-slate-800 flex items-center justify-between text-xs text-slate-400">
-            <div className="flex items-center space-x-2">
-              <FileText className="w-4 h-4 text-blue-400" />
-              <span className="font-mono text-white">Rakshitha_S_Resume.pdf</span>
-              <span className="text-[11px] text-slate-500">(Embedded PDF Preview)</span>
-            </div>
+        {/* Resume Download Action Hub (Preview Removed - Direct Download) */}
+        <div className="rounded-3xl bg-[#0c1222] border border-slate-800 p-8 sm:p-12 shadow-2xl mb-12 text-center max-w-3xl mx-auto">
+          <div className="w-16 h-16 rounded-2xl bg-blue-600/10 border border-blue-500/20 text-blue-400 flex items-center justify-center mx-auto mb-6 shadow-inner">
+            <Download className="w-8 h-8" />
+          </div>
+
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+            Download Official Resume
+          </h2>
+          <p className="text-slate-400 text-sm max-w-lg mx-auto mb-8 leading-relaxed">
+            Access the complete curriculum vitae for <strong className="text-slate-200">Rakshitha S</strong> covering full-stack web engineering, AI/ML research projects, internship experience at Pinnacle Labs, and verified technical skills.
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href={PROFILE_DATA.resumePdfUrl}
               download="Rakshitha_S_Resume.pdf"
-              className="text-blue-400 hover:text-blue-300 font-semibold"
+              className="w-full sm:w-auto inline-flex items-center justify-center space-x-2.5 px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white font-bold text-sm shadow-xl shadow-blue-900/30 transition-all hover:scale-[1.02] active:scale-[0.98]"
             >
-              Download Direct File
+              <Download className="w-5 h-5" />
+              <span>Download Official Resume (PDF)</span>
+            </a>
+
+            <a
+              href={PROFILE_DATA.resumePdfUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-6 py-4 rounded-xl bg-slate-800/90 hover:bg-slate-700 text-slate-200 hover:text-white font-semibold text-sm border border-slate-700 transition-colors"
+            >
+              <ExternalLink className="w-4 h-4" />
+              <span>Open in New Tab</span>
             </a>
           </div>
 
-          <div className="w-full h-[850px] bg-slate-950 p-2 sm:p-4">
-            <iframe
-              src={`${PROFILE_DATA.resumePdfUrl}#toolbar=1&navpanes=0&scrollbar=1`}
-              title="Official Resume PDF Viewer"
-              className="w-full h-full rounded-2xl border border-slate-800 bg-white"
-            />
+          <div className="mt-8 pt-6 border-t border-slate-800/80 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400 font-mono">
+            <span>File: Rakshitha_S_Resume.pdf</span>
+            <span>•</span>
+            <span>Format: Standard PDF</span>
+            <span>•</span>
+            <span>Length: 1 Page Executive Format</span>
           </div>
         </div>
 
@@ -126,7 +142,7 @@ export const ResumePage: React.FC = () => {
             <span>Document Integrity Verified</span>
           </p>
           <p>
-            The PDF document previewed above is served directly from the public asset directory (<code className="text-slate-300">public/documents/Rakshitha_S_Resume.pdf</code>). All profile details, academic records, internship dates, and contact information across this portfolio match this official resume.
+            The PDF document is served directly from the public asset directory (<code className="text-slate-300">public/documents/Rakshitha_S_Resume.pdf</code>). All profile details, academic records, internship dates, and contact information across this portfolio match this official resume.
           </p>
         </div>
 

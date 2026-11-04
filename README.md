@@ -12,7 +12,7 @@ A complete, premium, responsive developer portfolio engineered with **React 18**
   - **AI/ML Portfolio (`/ai-ml`)**: Showcase of all 9 artificial intelligence and machine learning systems spanning NLP, Computer Vision, Deep Learning (CNNs), and Clinical Predictive Modeling.
 - **18 Individual Project Architecture PDFs:** Programmatically compiled using Python's `reportlab` engine and served from `public/documents/architecture/`.
 - **Verified GitHub Project Links:** Every verified project card features a direct GitHub icon opening its exact repository in a new tab. Missing repositories are clearly distinguished with pending indicators—no dummy links or profile redirects.
-- **Official Resume Integration:** Rakshitha's verified resume PDF is hosted at `public/documents/Rakshitha_S_Resume.pdf`, with direct download buttons, navigation links, and an embedded modal preview.
+- **Official Resume Integration:** Rakshitha's verified resume PDF is hosted at `public/documents/Rakshitha_S_Resume.pdf`, with direct download buttons and navigation triggers across desktop and mobile.
 - **Strict Requirement Adherence:** Zero decorative "Live Demo" buttons anywhere on the platform.
 
 ---
@@ -61,7 +61,6 @@ MyPortfolio/
 │   │   ├── Footer.tsx                   # Comprehensive dark footer with social links
 │   │   ├── Navbar.tsx                   # Sticky glassmorphic navbar with mobile drawer
 │   │   ├── ProjectCard.tsx              # Standardized project card with verified links
-│   │   ├── ResumeModal.tsx              # Interactive embedded PDF resume viewer
 │   │   └── SectionHeader.tsx            # Standardized section headings
 │   ├── data/
 │   │   ├── profile.ts                   # Centralized personal, academic & career data
@@ -80,7 +79,7 @@ MyPortfolio/
 │   │   ├── FeaturedProjectsSection.tsx  # 5 Flagship projects on home page
 │   │   ├── SkillsSection.tsx            # Categorized skills grid & filter tabs
 │   │   ├── ExperienceSection.tsx        # Pinnacle Labs AI internship timeline
-│   │   ├── EducationSection.tsx         # Jnana Vikas Institute of Tech (8.4 CGPA)
+│   │   ├── EducationSection.tsx         # Jnana Vikas Institute of Tech (8.7 CGPA)
 │   │   ├── AchievementsSection.tsx      # Hackathons, certifications & event leadership
 │   │   └── ContactSection.tsx           # Contact details with active mailto/tel protocols
 │   ├── App.tsx                          # App routing & scroll restoration

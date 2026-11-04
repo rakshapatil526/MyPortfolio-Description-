@@ -1,0 +1,170 @@
+[
+  {
+    "name": "AI-Quiz-System",
+    "html_url": "https://github.com/rakshapatil526/AI-Quiz-System",
+    "description": "AI-powered student quiz and learning management system using Django and React.",
+    "language": "JavaScript"
+  },
+  {
+    "name": "Automated-Resume-Analyzer-and-candidate-Evaluation-System",
+    "html_url": "https://github.com/rakshapatil526/Automated-Resume-Analyzer-and-candidate-Evaluation-System",
+    "description": null,
+    "language": null
+  },
+  {
+    "name": "Diabetes-Risk-Prediction-System",
+    "html_url": "https://github.com/rakshapatil526/Diabetes-Risk-Prediction-System",
+    "description": "A machine learning-based Diabetes Risk Prediction System built with Python and Streamlit. It uses a trained ML model to predict diabetes risk based on user-provided health parameters, with data preprocessing, model evaluation, and an interactive web interface.python machine-learning streamlit diabetes-prediction healthcare scikit-learn",
+    "language": "Python"
+  },
+  {
+    "name": "Email-Spam-Detection-System",
+    "html_url": "https://github.com/rakshapatil526/Email-Spam-Detection-System",
+    "description": "An AI/ML-based email spam detection system built with Python and machine learning. It classifies messages as spam or legitimate using a trained model and provides an interactive interface.",
+    "language": "Python"
+  },
+  {
+    "name": "Expense-Tracker-",
+    "html_url": "https://github.com/rakshapatil526/Expense-Tracker-",
+    "description": "Full Stack Expense Tracker using React, Django REST Framework and SQLite",
+    "language": "JavaScript"
+  },
+  {
+    "name": "Fake-News-Detection-System",
+    "html_url": "https://github.com/rakshapatil526/Fake-News-Detection-System",
+    "description": "Machine Learning Based Fake News Detection System",
+    "language": "Python"
+  },
+  {
+    "name": "fghjk",
+    "html_url": "https://github.com/rakshapatil526/fghjk",
+    "description": null,
+    "language": null
+  },
+  {
+    "name": "Handwritten-Digit-Recognition-System",
+    "html_url": "https://github.com/rakshapatil526/Handwritten-Digit-Recognition-System",
+    "description": "A Python-based Handwritten Digit Recognition System using TensorFlow, CNN, and the MNIST dataset. It recognizes handwritten digits (0\u20139) through image preprocessing, model training, and prediction, with an interactive Streamlit application for drawing or uploading digit images.",
+    "language": "Python"
+  },
+  {
+    "name": "Hospital-Management",
+    "html_url": "https://github.com/rakshapatil526/Hospital-Management",
+    "description": null,
+    "language": null
+  },
+  {
+    "name": "House-Price-Prediction",
+    "html_url": "https://github.com/rakshapatil526/House-Price-Prediction",
+    "description": "House Price Prediction system using machine learning to estimate property prices based on housing features, with a Python application and model evaluation reports.",
+    "language": "Python"
+  },
+  {
+    "name": "JobConnect-AI-Job-Portal",
+    "html_url": "https://github.com/rakshapatil526/JobConnect-AI-Job-Portal",
+    "description": "AI-Powered Job Portal using Full stack( React, Django, Python,postgreSQL)",
+    "language": "JavaScript"
+  },
+  {
+    "name": "Library-Management-System",
+    "html_url": "https://github.com/rakshapatil526/Library-Management-System",
+    "description": "Full-stack Library Management System using React, Django REST Framework and SQLite.",
+    "language": "JavaScript"
+  },
+  {
+    "name": "local-repos",
+    "html_url": "https://github.com/rakshapatil526/local-repos",
+    "description": null,
+    "language": "CSS"
+  },
+  {
+    "name": "localrepo",
+    "html_url": "https://github.com/rakshapatil526/localrepo",
+    "description": null,
+    "language": null
+  },
+  {
+    "name": "Movie-Recommendation-System",
+    "html_url": "https://github.com/rakshapatil526/Movie-Recommendation-System",
+    "description": "Movie Recommendation System using machine learning to suggest movies based on user preferences and movie similarity.",
+    "language": "Python"
+  },
+  {
+    "name": "personal-portfolio-website",
+    "html_url": "https://github.com/rakshapatil526/personal-portfolio-website",
+    "description": "Personal portfolio website showcasing my projects, skills, and contact information. Built using HTML, CSS, and JavaScript.",
+    "language": null
+  },
+  {
+    "name": "portfolio",
+    "html_url": "https://github.com/rakshapatil526/portfolio",
+    "description": null,
+    "language": null
+  },
+  {
+    "name": "practice-demo",
+    "html_url": "https://github.com/rakshapatil526/practice-demo",
+    "description": "this is my first repo",
+    "language": null
+  },
+  {
+    "name": "practices-demo",
+    "html_url": "https://github.com/rakshapatil526/practices-demo",
+    "description": "my repo",
+    "language": "HTML"
+  },
+  {
+    "name": "rakshapatil526",
+    "html_url": "https://github.com/rakshapatil526/rakshapatil526",
+    "description": "Personal Developer Portfolio",
+    "language": null
+  },
+  {
+    "name": "Rakshitha",
+    "html_url": "https://github.com/rakshapatil526/Rakshitha",
+    "description": null,
+    "language": "Python"
+  },
+  {
+    "name": "RealEstateApplication",
+    "html_url": "https://github.com/rakshapatil526/RealEstateApplication",
+    "description": null,
+    "language": "Python"
+  },
+  {
+    "name": "Restaurant-Management-System",
+    "html_url": "https://github.com/rakshapatil526/Restaurant-Management-System",
+    "description": "Full-stack Restaurant Management System using React, Django REST Framework and SQLite.",
+    "language": "JavaScript"
+  },
+  {
+    "name": "Smart-HMS-Integreted-enterprise-Hospital-Manegment-System-and-digitalcare-Administrate",
+    "html_url": "https://github.com/rakshapatil526/Smart-HMS-Integreted-enterprise-Hospital-Manegment-System-and-digitalcare-Administrate",
+    "description": "An AI-powered Smart Hospital Management System built with Django, React.js, and PostgreSQL to streamline clinical operations, diagnostics, emergency management, and hospital administration through an integrated web platform.",
+    "language": "TypeScript"
+  },
+  {
+    "name": "Student-Management-System",
+    "html_url": "https://github.com/rakshapatil526/Student-Management-System",
+    "description": "Using Backend Django REST Framework CURD operation",
+    "language": "HTML"
+  },
+  {
+    "name": "Student-Performance-Prediction",
+    "html_url": "https://github.com/rakshapatil526/Student-Performance-Prediction",
+    "description": "Machine learning-based Student Performance Prediction system that analyzes student-related data to estimate academic performance and support data-driven educational insights.",
+    "language": "HTML"
+  },
+  {
+    "name": "TaskFlow-To-Do-List-",
+    "html_url": "https://github.com/rakshapatil526/TaskFlow-To-Do-List-",
+    "description": " Full-stack task management system using React, Django REST Framework and SQLite.",
+    "language": "JavaScript"
+  },
+  {
+    "name": "Traffic-Sign-Recognition-System",
+    "html_url": "https://github.com/rakshapatil526/Traffic-Sign-Recognition-System",
+    "description": "An AI-powered Traffic Sign Recognition System using Python, Streamlit, OpenCV, TensorFlow, and CNN for traffic sign detection, classification, video analysis, and driving safety insights.",
+    "language": "Python"
+  }
+]

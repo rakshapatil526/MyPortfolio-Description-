@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
   Download, 
@@ -6,7 +6,6 @@ import {
   Github, 
   Linkedin, 
   MapPin, 
-  FileText, 
   Sparkles, 
   Code2, 
   Cpu, 
@@ -15,11 +14,8 @@ import {
 } from 'lucide-react';
 import { PROFILE_DATA } from '../data/profile';
 import { FULL_STACK_PROJECTS, AI_ML_PROJECTS } from '../data/projects';
-import { ResumeModal } from '../components/ResumeModal';
 
 export const HeroSection: React.FC = () => {
-  const [resumeModalOpen, setResumeModalOpen] = useState(false);
-
   const scrollToProjects = () => {
     const el = document.getElementById('featured-projects');
     if (el) {
@@ -65,7 +61,7 @@ export const HeroSection: React.FC = () => {
 
             {/* Professional Summary Introduction */}
             <p className="text-slate-400 text-base sm:text-lg leading-relaxed max-w-2xl mb-10">
-              Computer Science and Engineering student at Jnana Vikas Institute of Technology (CGPA 8.4/10). 
+              Computer Science and Engineering student at Jnana Vikas Institute of Technology (CGPA 8.7/10). 
               Specializing in full-stack architecture with React, Django, and PostgreSQL, alongside intelligent machine learning workflows, NLP, and computer vision.
             </p>
 
@@ -89,15 +85,6 @@ export const HeroSection: React.FC = () => {
                 <Download className="w-4 h-4" />
                 <span>Download Resume (PDF)</span>
               </a>
-
-              {/* Preview Resume Modal */}
-              <button
-                onClick={() => setResumeModalOpen(true)}
-                className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-5 py-3.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-slate-200 border border-slate-700/80 font-medium text-sm transition-all"
-              >
-                <FileText className="w-4 h-4 text-blue-400" />
-                <span>Preview Resume</span>
-              </button>
             </div>
 
             {/* Social Links & Verified Profiles */}
@@ -153,7 +140,7 @@ export const HeroSection: React.FC = () => {
                   <GraduationCap className="w-3.5 h-3.5" />
                   <span>Academic Standing</span>
                 </div>
-                <div className="text-2xl font-bold text-white">8.4 / 10 CGPA</div>
+                <div className="text-2xl font-bold text-white">8.7 / 10 CGPA</div>
                 <div className="text-[11px] text-slate-400">B.E. CSE, 7th Semester</div>
               </div>
 
@@ -170,11 +157,6 @@ export const HeroSection: React.FC = () => {
           </div>
         </div>
       </section>
-
-      <ResumeModal
-        isOpen={resumeModalOpen}
-        onClose={() => setResumeModalOpen(false)}
-      />
     </>
   );
 };

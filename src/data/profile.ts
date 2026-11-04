@@ -60,7 +60,7 @@ export const PROFILE_DATA: ProfileInfo = {
   summary:
     "Computer Science and Engineering student focused on full-stack development and AI/ML, with hands-on project experience building web applications using React, Django, Python, and relational databases. Familiar with REST API development, authentication, database design, data analysis, machine learning workflows, and computer-vision tools. Interested in developing practical, user-focused software that combines reliable application engineering with useful AI capabilities.",
   aboutBio: [
-    "I am a Computer Science and Engineering student at Jnana Vikas Institute of Technology (CGPA 8.4/10, 7th Semester), deeply passionate about building end-to-end full-stack applications and intelligent AI/ML systems.",
+    "I am a Computer Science and Engineering student at Jnana Vikas Institute of Technology (CGPA 8.7/10, 7th Semester), deeply passionate about building end-to-end full-stack applications and intelligent AI/ML systems.",
     "My hands-on experience spans designing modular RESTful APIs with Django REST Framework, building reactive web interfaces with React and Tailwind CSS, and implementing machine learning pipelines with Scikit-learn, TensorFlow, and OpenCV.",
     "I believe great software balances clean architectural patterns, robust data integrity, and thoughtful user experience. Whether developing an enterprise hospital management platform or training computer vision classifiers, I focus on writing maintainable, production-ready code that solves real-world challenges."
   ],
@@ -69,7 +69,7 @@ export const PROFILE_DATA: ProfileInfo = {
     institution: "Jnana Vikas Institute of Technology",
     location: "Bidadi, Bengaluru, Karnataka",
     period: "October 2023 – June 2027 (Expected)",
-    cgpa: "8.4 / 10.0",
+    cgpa: "8.7 / 10.0",
     currentSemester: "7th Semester",
     coursework: [
       "Data Structures and Algorithms",

@@ -1,0 +1,53 @@
+RAKSHITHA S
+FULL-STACK DEVELOPER | AI/ML ENTHUSIAST
++91 7349248807  |  Bengaluru, Karnataka  |  raksharakshitha02@gmail.com
+GitHub  |  LinkedIn
+
+PROFESSIONAL SUMMARY
+Computer Science and Engineering student focused on full-stack development and AI/ML, with hands-on project experience building web applications using React, Django, Python, and relational databases. Familiar with REST API development, authentication, database design, data analysis, machine learning workflows, and computer-vision tools. Interested in developing practical, user-focused software that combines reliable application engineering with useful AI capabilities.
+
+TECHNICAL SKILLS
+Programming: Python, JavaScript, TypeScript, SQL
+Frontend: React.js, Vite, HTML5, CSS3, Tailwind CSS, Bootstrap
+Backend & APIs: Django, Django REST Framework, RESTful APIs, JWT Authentication
+Databases: PostgreSQL, MySQL, MongoDB
+AI / ML & Data: Machine Learning fundamentals, NLP, Computer Vision, NumPy, Pandas, Scikit-learn, OpenCV, MediaPipe
+Tools: Git, GitHub, VS Code, Postman, Jupyter Notebook
+Core Concepts: Data Structures & Algorithms, OOP, DBMS, API Integration
+
+PROFESSIONAL EXPERIENCE
+Artificial Intelligence Intern — Pinnacle Labs  |  Aug 2025
+• Completed a 4-week virtual internship covering core AI concepts and practical AI workflows.
+• Worked on AI-related tasks and project activities, applying analytical thinking and problem-solving.
+• Built familiarity with project-based development and translating concepts into practical solutions.
+
+PROJECTS
+1. JobConnect AI – Smart Job Recruitment & Career Management Platform
+• Developed a recruitment platform with separate workflows for job seekers, recruiters, and administrators, supporting job discovery, applications, hiring, and platform management.
+• Implemented job search and application tracking, resume management and ATS analysis, recruiter job posting, candidate matching using TF-IDF and cosine similarity, and interview scheduling.
+• Added role-based access, JWT authentication, AI-assisted resume and job-description tools, and PDF generation for resumes, application receipts, offer letters, and reports.
+Tech Stack: React.js, Vite, Tailwind CSS, Python, Django REST Framework, SQLite/PostgreSQL, Scikit-learn, TF-IDF, JWT, ReportLab
+
+2. AI Quiz – AI-Based Study and Assessment Platform
+• Built an AI-focused learning application that processes study documents and turns learning content into structured study resources such as summaries, key concepts, MCQs, flashcards, and quizzes.
+• Designed a learning flow covering document text extraction, AI-generated learning material, quiz attempts, scoring, and performance insights to help learners identify weaker topics.
+• Repository includes separate Django backend and React/Vite frontend areas, with dedicated AI engine, quiz, document, authentication, and ML analytics components.
+Tech Stack: Python, Django, React.js, Vite, AI/ML components, Random Forest, K-means
+
+3. Fake News Detector – Machine Learning-Based News Classification
+• Developed a machine learning application to analyze news text and classify articles as fake or real.
+• Applied text preprocessing and NLP-based feature extraction to prepare news content for classification.
+• Built a prediction workflow that accepts news text and returns a classification result to help users assess information credibility.
+Tech Stack: Python, Machine Learning, NLP, Scikit-learn
+
+EDUCATION
+B.E. – Computer Science and Engineering  |  Jnana Vikas Institute of Technology, Bidadi, Bengaluru
+Oct 2023 – Jun 2027 (Expected)  |  7th Semester  |  CGPA: 8.7/10
+Relevant Coursework: Data Structures & Algorithms, OOP, DBMS, SQL, Python Programming, Web Development, Operating Systems
+
+CERTIFICATIONS & ACHIEVEMENTS
+• Artificial Intelligence Internship, Pinnacle Labs – completed a 4-week virtual internship in Aug 2025.
+• Participated in a 24-hour intercollegiate hackathon, strengthening rapid prototyping, teamwork, and technical problem-solving.
+
+LEADERSHIP & SOFT SKILLS
+Teamwork, Communication, Problem-Solving, Project Coordination, Time Management, Adaptability, Event Coordination (Hackathon, Treasure Hunt, Photography, and Tech Charades; 100+ participants).

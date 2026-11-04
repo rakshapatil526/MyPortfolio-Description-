@@ -104,10 +104,15 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/resume" className="hover:text-blue-400 transition-colors flex items-center gap-1.5">
-                  <FileText className="w-3.5 h-3.5 text-emerald-400" />
-                  <span>Official Resume Document</span>
-                </Link>
+                <a 
+                  href={PROFILE_DATA.resumePdfUrl} 
+                  download="Rakshitha_S_Resume.pdf"
+                  className="hover:text-blue-400 transition-colors flex items-center gap-1.5"
+                  title="Download Rakshitha S Resume PDF"
+                >
+                  <Download className="w-3.5 h-3.5 text-emerald-400" />
+                  <span>Download Resume (PDF)</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -120,7 +125,7 @@ export const Footer: React.FC = () => {
             <div className="space-y-2 text-xs">
               <div>
                 <p className="text-white font-medium">B.E. Computer Science</p>
-                <p className="text-slate-400">Jnana Vikas Inst of Tech (8.4 CGPA)</p>
+                <p className="text-slate-400">Jnana Vikas Inst of Tech (8.7 CGPA)</p>
               </div>
               <div>
                 <p className="text-white font-medium">AI Intern — Pinnacle Labs</p>

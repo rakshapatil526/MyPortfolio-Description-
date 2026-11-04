@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { 
-  FileText, 
   Download, 
   Menu, 
   X, 
@@ -12,12 +11,10 @@ import {
   ExternalLink 
 } from 'lucide-react';
 import { PROFILE_DATA } from '../data/profile';
-import { ResumeModal } from './ResumeModal';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [resumeModalOpen, setResumeModalOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -38,7 +35,7 @@ export const Navbar: React.FC = () => {
     { label: 'Full Stack', path: '/full-stack' },
     { label: 'AI/ML', path: '/ai-ml' },
     { label: 'About', path: '/#about' },
-    { label: 'Resume', path: '/resume', isResumeAction: true },
+    { label: 'Resume', path: PROFILE_DATA.resumePdfUrl, isDownload: true },
     { label: 'Contact', path: '/#contact' },
   ];
 
@@ -89,6 +86,20 @@ export const Navbar: React.FC = () => {
             {/* Desktop Navigation Links */}
             <nav className="hidden md:flex items-center space-x-1 lg:space-x-2">
               {navLinks.map((link) => {
+                if (link.isDownload) {
+                  return (
+                    <a
+                      key={link.label}
+                      href={link.path}
+                      download="Rakshitha_S_Resume.pdf"
+                      className="px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/40 transition-all flex items-center gap-1.5"
+                      title="Download Official Resume PDF"
+                    >
+                      <Download className="w-3.5 h-3.5 text-blue-400" />
+                      <span>{link.label}</span>
+                    </a>
+                  );
+                }
                 const isActive = location.pathname === link.path;
                 return (
                   <Link
@@ -109,16 +120,6 @@ export const Navbar: React.FC = () => {
 
             {/* Right Action Buttons */}
             <div className="hidden sm:flex items-center space-x-3">
-              {/* Resume Preview Modal Trigger */}
-              <button
-                onClick={() => setResumeModalOpen(true)}
-                className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white text-xs font-semibold border border-slate-700 transition-colors"
-                title="Preview Official Resume PDF"
-              >
-                <FileText className="w-3.5 h-3.5 text-blue-400" />
-                <span>Preview</span>
-              </button>
-
               {/* Download Resume Direct */}
               <a
                 href={PROFILE_DATA.resumePdfUrl}
@@ -127,7 +128,7 @@ export const Navbar: React.FC = () => {
                 title="Download Official Resume PDF"
               >
                 <Download className="w-3.5 h-3.5" />
-                <span>Resume</span>
+                <span>Download Resume</span>
               </a>
 
               {/* GitHub Link */}
@@ -155,15 +156,17 @@ export const Navbar: React.FC = () => {
               </a>
             </div>
 
-            {/* Mobile Hamburger Button */}
+            {/* Mobile Actions */}
             <div className="flex md:hidden items-center space-x-2">
-              <button
-                onClick={() => setResumeModalOpen(true)}
-                className="p-2 rounded-lg bg-slate-800 text-blue-400 border border-slate-700"
-                title="Preview Resume"
+              <a
+                href={PROFILE_DATA.resumePdfUrl}
+                download="Rakshitha_S_Resume.pdf"
+                className="p-2 rounded-lg bg-blue-600/20 text-blue-400 border border-blue-500/30 hover:bg-blue-600/30 transition-colors"
+                title="Download Resume PDF"
+                aria-label="Download Resume PDF"
               >
-                <FileText className="w-4 h-4" />
-              </button>
+                <Download className="w-4 h-4" />
+              </a>
 
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -180,45 +183,50 @@ export const Navbar: React.FC = () => {
         {mobileMenuOpen && (
           <div className="md:hidden border-b border-slate-800 bg-[#090d16]/98 backdrop-blur-xl px-4 pt-4 pb-6 space-y-3 animate-fadeIn">
             <div className="space-y-1">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.label}
-                  to={link.path}
-                  onClick={(e) => {
-                    handleNavClick(e, link.path);
-                    setMobileMenuOpen(false);
-                  }}
-                  className={`block px-3 py-2 rounded-lg text-base font-medium ${
-                    location.pathname === link.path
-                      ? 'text-white bg-slate-800/80 font-semibold'
-                      : 'text-slate-300 hover:text-white hover:bg-slate-800/40'
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {navLinks.map((link) => {
+                if (link.isDownload) {
+                  return (
+                    <a
+                      key={link.label}
+                      href={link.path}
+                      download="Rakshitha_S_Resume.pdf"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block px-3 py-2 rounded-lg text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800/40 flex items-center gap-2"
+                    >
+                      <Download className="w-4 h-4 text-blue-400" />
+                      <span>{link.label} (Download PDF)</span>
+                    </a>
+                  );
+                }
+                return (
+                  <Link
+                    key={link.label}
+                    to={link.path}
+                    onClick={(e) => {
+                      handleNavClick(e, link.path);
+                      setMobileMenuOpen(false);
+                    }}
+                    className={`block px-3 py-2 rounded-lg text-base font-medium ${
+                      location.pathname === link.path
+                        ? 'text-white bg-slate-800/80 font-semibold'
+                        : 'text-slate-300 hover:text-white hover:bg-slate-800/40'
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
             </div>
 
             <div className="pt-4 border-t border-slate-800 flex flex-col space-y-2">
               <a
                 href={PROFILE_DATA.resumePdfUrl}
                 download="Rakshitha_S_Resume.pdf"
-                className="w-full flex items-center justify-center space-x-2 py-2.5 rounded-lg bg-blue-600 text-white font-semibold text-sm shadow-md"
+                className="w-full flex items-center justify-center space-x-2 py-2.5 rounded-lg bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold text-sm shadow-md"
               >
                 <Download className="w-4 h-4" />
                 <span>Download Resume (PDF)</span>
               </a>
-
-              <button
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  setResumeModalOpen(true);
-                }}
-                className="w-full flex items-center justify-center space-x-2 py-2 rounded-lg bg-slate-800 text-slate-200 border border-slate-700 font-medium text-sm"
-              >
-                <FileText className="w-4 h-4 text-blue-400" />
-                <span>Preview Resume In Modal</span>
-              </button>
 
               <div className="pt-2 flex items-center justify-center space-x-4">
                 <a
@@ -245,12 +253,6 @@ export const Navbar: React.FC = () => {
           </div>
         )}
       </header>
-
-      {/* Global Resume Preview Modal */}
-      <ResumeModal
-        isOpen={resumeModalOpen}
-        onClose={() => setResumeModalOpen(false)}
-      />
     </>
   );
 };
